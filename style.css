@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+header {
+  background: #004094;
+}
+.logo img {
+  width: 90%;
+  margin-left: 5%;
+}
+.bca img {
+  width: 80%;
+  margin-left: 10%;
+}
+.bgbtn {
+ background-image:url("b2.png"); 
+ background-repeat:no-repeat;
+ background-size:cover;
+ width:100%;
+ padding: 200px 0;
+ margin-top: -20px;
+}
+.button {
+  margin-left: 15%;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FCD058;
+  background: #004094;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 5px 4px 3px 0px rgba(26,73,143,0.425),-5px -4px 3px 0px rgba(26,73,143,0.425) ;
+  margin: 20px;
+  transition: 2s;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 1px 1px 1px 0px rgba(88,88,88,0.425) ,-1px -1px 1px 0px rgba(88,88,88,0.425) ;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #003990;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #004094;
+  max-width: 80%;
+}
+p {
+  color: #fff;
+}
+.title {
+  color: #FDD059;
+}
+.close-button {
+  margin-left: 20px;
+  color: #fff;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-body img {
+  width: 640px;
+  height: 800px;
+  margin: auto;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.text h4 {
+  color: #004094;
+  text-align: center;
+  font-weight: bolde;
+  font-size: 50px;
+  text-transform:uppercase;
+  margin-bottom:-2px;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 9px;
+  margin-left:50px;
+}
+.text h4 samp {
+color: #E48900;
+margin-left: 10px;
+opacity: .7;
+}
+.audio {
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 30%;
+}
